@@ -1,0 +1,10 @@
+{
+  "name": "Localio",
+  "short_name": "Localio",
+  "description": "Find the places locals actually talk about.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf6ec",
+  "theme_color": "#faf6ec",
+  "icons": []
+}
