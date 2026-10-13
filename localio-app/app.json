@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Localio",
+    "slug": "localio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ankit.localio",
+      "infoPlist": {
+        "NSContactsUsageDescription": "Localio uses contact phone numbers only to prioritize reviews from people you know."
+      }
+    },
+    "android": {
+      "package": "com.ankit.localio",
+      "permissions": ["android.permission.READ_CONTACTS"],
+      "adaptiveIcon": {
+        "backgroundColor": "#F7F7FC",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Localio uses your location only to confirm you are at a place when you post a review or list your business."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Localio needs photo access so you can attach a photo to a review or your business.",
+          "cameraPermission": "Localio needs the camera so you can take a photo for a review or your business."
+        }
+      ],
+      "expo-splash-screen"
+    ],
+    "scheme": "localio",
+    "backgroundColor": "#F7F7FC"
+  }
+}
